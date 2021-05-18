@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PC GURU</title>
 </head>
+
 <body>
-    <div class="bg-primary">
-        <h1>Exemplo</h1>
-    </div>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo_pcguru.png" height="45px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column flex-lg-row flex-wrap bd-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destaques">Em Destaque</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#melhores-precos">Melhores Preços</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-column flex-lg-row flex-wrap ms-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Favoritos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minha Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item no-border">
+                        <a class="nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li>
+                        <button class="btn btn-dark text-white mt-2 mt-lg-0">
+                            Entrar/Cadastrar
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="bg-dark" style="height: 100px;">
+            <label class="text-white mt-2">Aqui vem o banner</label>
+        </section>
+        <section class="bg-light-dark" style="height:300px;">
+            <label class="mt-2">Aqui vem o formulário de preenchimento do perfil de uso</label>
+        </section>
+        <section id="destaques" class="bg-white" style="height: 300px;">
+            <label class="mt-2">Aqui vem os "Em Destaque"</label>
+        </section>
+        <section class="bg-white" style="height: 300px;">
+            <label id="melhores-precos" class="mt-2">Aqui vem os "Melhores Preços"</label>
+        </section>
+    </main>
+    <footer class="bg-light-dark p-4">
+        <ul class="d-flex flex-row justify-content-around">
+            <a href="#"><li>Item 1</li></a>
+            <a href="#"><li>Item 2</li></a>
+            <a href="#"><li>Item 3</li></a>
+            <h2>PC GURU</h2>
+            <a href="#"><li>Item 4</li></a>
+            <a href="#"><li>Item 5</li></a>
+            <a href="#"><li>Item 6</li></a>
+        </ul>   
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
 </html>
