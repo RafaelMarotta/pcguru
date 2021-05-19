@@ -24,6 +24,23 @@
     .nav-link {
         border-bottom: 1px solid rgba(0,0,0,.3)!important;
     }
+    .footer-link {
+        display: none;
+    }
+}
+
+.footer-link {
+    font-size: 0.85rem!important;
+    font-weight: bold;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size:1.2rem!important;
+}
+
+.footer-terms {
+    font-size: 0.85!important;
 }
 
 .no-border {
