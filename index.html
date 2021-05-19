@@ -7,8 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <title>PC GURU</title>
+    <style>
+        .card{
+            border: none;
+            margin: 25px;
+            background: none;
+        }
+        .card-group{
+            margin-bottom: -10px;
+        }
+        .img-banner{
+            width: 100%;
+            height: 350px;
+        }
+        .card-img-top{
+            border: 2px solid lightslategray;
+            border-bottom: none;
+        }
+        .card-body{
+            border: 2px solid lightslategray;
+            border-top: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,19 +67,75 @@
                         <button class="btn btn-dark text-white mt-2 mt-lg-0">
                             Entrar/Cadastrar
                         </button>
+                        
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <section class="bg-dark" style="height: 100px;">
-            <label class="text-white mt-2">Aqui vem o banner</label>
+        <section class="bg-dark">
+            <a href="https://www.w3schools.com/" target="_blank">
+                <img src="img/banner_pcguru.png" class="img-banner" alt="...">
+                </a>      
         </section>
-        <section class="bg-light-dark" style="height:300px;">
-            <label class="mt-2">Aqui vem o formulário de preenchimento do perfil de uso</label>
+        <div class="container mb-3 mt-2">
+        <section class="container-fluid">
+            <div class="card-group">
+                <div class="card p-5 mt-3">
+                    <a href="indicacoes.html?categoria=home-office">
+                  <img src="img/home_office.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Trabalho Home Office</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="card p-5 mt-3">
+                    <a href="indicacoes.html?categoria=jogos">
+                  <img src="img/jogos.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Jogos no Computador</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="card p-5 mt-3">
+                    <a href="indicacoes.html?categoria=compras-online">
+                  <img src="img/compras_online.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Compras Online</h5>
+                  </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card p-5 mb-3" style="margin-top: -80px;">
+                    <a href="indicacoes.html?categoria=estudos">
+                  <img src="img/estudos_home.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Estudos Home Office</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="card p-5 mb-3" style="margin-top: -80px;">
+                    <a href="indicacoes.html?categoria=uso-pessoal">
+                  <img src="img/redes_sociais.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Uso Pessoal</h5>
+                  </a>
+                  </div>
+                </div>
+                <div class="card p-5 mb-3" style="margin-top: -80px;">
+                    <a href="indicacoes.html?categoria=editor">
+                    <img src="img/video_editor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Edição de Fotos/Videos</h5>
+                    </a>
+                    </div>
+                  </div>
+              </div>
         </section>
-        <section id="destaques" class="bg-white" style="height: 300px;">
+    </div>
+        <section id="destaques" class="bg-light-dark" style="height: 300px;">
             <label class="mt-2">Aqui vem os "Em Destaque"</label>
         </section>
         <section class="bg-white" style="height: 300px;">
