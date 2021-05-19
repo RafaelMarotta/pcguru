@@ -5,6 +5,8 @@
     "Armazenamento":"HD 1TB",
     "Mémoria RAM":"DDR4 8GB",
     "Gabinete" :"Redragon Megatron",
+    "Preço":"R$ 8.199,00",
+    "No cartão":"R$ 9.424,14 ou 12x de R$ 785,35",
 
 }
 {
@@ -14,8 +16,8 @@
     "Armazenamento":"HD 1TB",
     "Mémoria RAM":"DDR4 8GB",
     "Gabinete" :"Redragon Grapple",
-    "Preço":"R$3.196,16",
-    "No cartão":"R$3.632,00 ou 10x de R$363,20",
+    "Preço":"R$ 9.729,00 ",
+    "No cartão":"R$ 11.182,76 ou 12x de R$ 931,90",
 }
 {
     "Processador":"AMD RYZEN 5 2400G",
@@ -24,23 +26,29 @@
     "Armazenamento":"SSD 256GB",
     "Mémoria RAM":"16GB DDR4",
     "Gabinete" :"Pichau Lark ",
+    "Preço":"R$3.033,36",
+    "No cartão":"R$3.447,00 ou 10x de R$344,70",
 
 }
 {
-    "Processador":"",
-    "Placa-mãe" : "",
-    "Placa de video": "",
-    "Armazenamento":"",
-    "Mémoria RAM":"",
-    "Gabinete" :"",
+    "Processador":"INTEL 10400F",
+    "Placa-mãe" : "H410M",
+    "Placa de video": "GEFORCE GTX 1050 TI 4GB",
+    "Armazenamento":"SSD 256GB",
+    "Mémoria RAM":"8GB DDR4",
+    "Gabinete" :"PICHAU DRAGOON",
+    "Preço":"R$5.549,90",
+    "No cartão":"R$6.306,71 ou 10x de R$630,67",
 
 }
 {
-    "Processador":"",
-    "Placa-mãe" : "",
-    "Placa de video": "",
-    "Armazenamento":"",
-    "Mémoria RAM":"",
-    "Gabinete" :"",
+    "Processador":"AMD RYZEN 5 3500X",
+    "Placa-mãe" : "A320M",
+    "Placa de video": "GEFORCE GTX 1650 4GB",
+    "Armazenamento":"SSD 256GB",
+    "Mémoria RAM":"8GB DDR4",
+    "Gabinete" :"PICHAU DRAGOON",
+    "Preço":"R$5.232,00",
+    "No cartão":"R$5.945,46 ou 10x de R$594,55 ",
 
 }
