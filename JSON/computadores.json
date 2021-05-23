@@ -1,0 +1,36 @@
+{
+    "indicacoes": [
+        {
+            "id": "1",
+            "categoria": "jogos",
+            "imagemComputador": "pc-01.png",
+            "lojaImagem": "americanas.jpg",
+            "nota": "5",
+            "linkLoja": "https://www.google.com",
+            "processador": "AMD RYZEN 5 5600X",
+            "placaMae": "Asus Prime A520M-E",
+            "placaDeVideo": "GeForce RTX 2060 6GB",
+            "armazenamento": "HD 1TB",
+            "memoriaRAM": "DDR4 8GB",
+            "gabinete": "Redragon Megatron",
+            "preco": "R$ 8.199,00",
+            "noCartao": "R$ 9.424,14 ou 12x de R$ 785,35"
+        },
+        {
+            "id": "2",
+            "categoria": "jogos",
+            "imagemComputador": "pc-01.png",
+            "lojaImagem": "americanas.jpg",
+            "nota": "5",
+            "linkLoja": "https://www.google.com",
+            "processador": "AMD RYZEN 5 5600X",
+            "placaMae": "Asus Prime A520M-E",
+            "placaDeVideo": "GeForce RTX 2060 6GB",
+            "armazenamento": "HD 1TB",
+            "memoriaRAM": "DDR4 8GB",
+            "gabinete": "Redragon Megatron",
+            "preco": "R$ 8.199,00",
+            "noCartao": "R$ 9.424,14 ou 12x de R$ 785,35"
+        }
+    ]
+}
