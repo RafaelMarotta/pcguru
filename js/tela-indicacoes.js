@@ -5,7 +5,7 @@ loadIndicacoes()
 async function loadIndicacoes() {
     const indicacoes = filterCategoriaSelected(await fetch('./JSON/computadores.json')
         .then(response => response.json()))
-    appendIndicacoes(indicacoes)
+    appendIndicacoes('<p class="text-danger mt-2"> Ops, não consegui encontrar resultados para o filtro selecionado</p>', indicacoes)
 }
 
 function filterCategoriaSelected(json) {

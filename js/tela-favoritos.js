@@ -5,7 +5,7 @@ loadIndicacoes()
 async function loadIndicacoes() {
     const indicacoes = filterCategoriaSelected(await fetch('./JSON/computadores.json')
         .then(response => response.json()))
-    appendIndicacoes(indicacoes)
+    appendIndicacoes('<p class="text-danger mt-2"> Ops, você ainda não tem posts marcados como favoritos!</p>', indicacoes)
 }
 
 function filterCategoriaSelected(json) {

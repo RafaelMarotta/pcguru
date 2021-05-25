@@ -1,10 +1,14 @@
-async function appendIndicacoes(indicacoes) {
+async function appendIndicacoes(notFoundMessage, indicacoes) {
     const cardIndicacao = await fetch("./components/card-indicacao.html")
         .then(response => response.text())
 
     indicacoes.forEach(element => {
         appendIndicacao(cardIndicacao, element)
     });
+
+    if (indicacoes.length == 0) {
+        $("#cards-indicacoes").append(notFoundMessage)
+    }
 
 }
 
