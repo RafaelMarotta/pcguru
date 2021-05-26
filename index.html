@@ -2,114 +2,136 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <title>PC GURU</title>
-    <style>
-        .card{
-            border: none;
-            margin: 25px;
-            background: none;
-        }
-        .card-group{
-            margin-bottom: -10px;
-        }
-        .img-banner{
-            width: 100%;
-            height: 350px;
-        }
-        .card-img-top{
-            border: 2px solid lightslategray;
-            border-bottom: none;
-        }
-        .card-body{
-            border: 2px solid lightslategray;
-            border-top: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <title>PC GURU</title>
+  <style>
+    .card {
+      border: none;
+      margin: 2px;
+      background: none;
+    }
+
+    .card-group {}
+
+    /* responsive media query */
+    @media (min-width: 768px) and (max-width: 980px) {
+      .card {
+        width: 100% !important;
+      }
+
+      .card:nth-child(odd) {
+        margin-left: 6;
+      }
+    }
+
+    .img-banner {
+      width: 100%;
+      background-image: url("img/banner_pcguru2.png");
+      min-height: 365px;
+      background-size: 100% 100%;
+    }
+
+    @media (max-width: 600px) {
+      .img-banner {
+        background-image: url("img/banner_menor.png");
+      }
+    }
+
+    .card-img-top {
+      border: 2px solid white;
+      border-bottom: none;
+    }
+
+    .card-body {
+      border: 2px solid white;
+      border-top: none;
+    }
+  </style>
 </head>
 
 <body>
-    <section class="bg-dark">
-        <a href="index.html">
-            <img src="img/banner_pcguru2.png" class="img-banner" alt="...">
-            </a>      
-    </section>
-    <main>
-        <h1 style="text-align: center;">Selecione a opção que representa a maior parte do seu uso do computador:</h1>
-        <div class="container" style="border: 2px solid black;">
-        <div class="container mb-3 mt-2">
+
+  <section class="bg-dark">
+    <div class="img-banner">
+    </div>
+  </section>
+  <main class="bg-dark">
+    <h1 class="text-center text-white p-3" >Selecione a opção que representa a maior parte do seu uso do computador:</h1>
+    <div class="container bg-dark" style="border: 2px solid white;">
+      <div class="container mb-3">
         <section class="container-fluid">
-            <div class="card-group">
-                <div class="card p-5 mt-3">
-                    <a href="indicacoes.html?categoria=home-office" id="btn-div">
-                  <img src="img/home_office.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;">Trabalho Home Office</h5>
-                  </a>
-                  </div>
-                </div>
-                <div class="card p-5 mt-3">
-                    <a href="indicacoes.html?categoria=jogos">
-                  <img src="img/jogos.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;">Jogos no Computador</h5>
-                  </a>
-                  </div>
-                </div>
-                <div class="card p-5 mt-3">
-                    <a href="indicacoes.html?categoria=compras-online">
-                  <img src="img/compras_online.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;">Compras Online</h5>
-                  </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card-group">
-                <div class="card p-5 mb-3" style="margin-top: -80px;">
-                    <a href="indicacoes.html?categoria=estudos">
-                  <img src="img/estudos_home.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;">Estudos Home Office</h5>
-                  </a>
-                  </div>
-                </div>
-                <div class="card p-5 mb-3" style="margin-top: -80px;">
-                    <a href="indicacoes.html?categoria=uso-pessoal">
-                  <img src="img/redes_sociais.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="text-align: center;">Uso Pessoal</h5>
-                  </a>
-                  </div>
-                </div>
-                <div class="card p-5 mb-3" style="margin-top: -80px;">
-                    <a href="indicacoes.html?categoria=editor">
-                    <img src="img/video_editor.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title" style="text-align: center;">Edição de Fotos/Videos</h5>
-                    </a>
-                    </div>
-                  </div>
-              </div>
-        </section>
+          <div class="card-group row-fluid">
+            <div class="card p-5 bg-dark">
+              <a href="indicacoes.html?categoria=home-office" id="btn-div">
+                <img src="img/home_office.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center; color: white;">Trabalho Home Office</h5>
+              </a>
+            </div>
+          </div>
+          <div class="card p-5 bg-dark">
+            <a href="indicacoes.html?categoria=jogos">
+              <img src="img/jogos.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center; color: white;">Jogos no Computador</h5>
+            </a>
+          </div>
+      </div>
+      <div class="card p-5">
+        <a href="indicacoes.html?categoria=compras-online">
+          <img src="img/compras_online.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; color: white;">Compras Online</h5>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="card-group row-fluid">
+      <div class="card p-5 mb-3 bg-dark">
+        <a href="indicacoes.html?categoria=estudos">
+          <img src="img/estudos_home.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; color: white;">Estudos Home Office</h5>
+        </a>
+      </div>
+    </div>
+    <div class="card p-5 mb-3 bg-dark">
+      <a href="indicacoes.html?categoria=uso-pessoal">
+        <img src="img/redes_sociais.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center; color: white;">Rede Sociais/Navegar</h5>
+      </a>
+    </div>
+    </div>
+    <div class="card p-5 mb-3 bg-dark">
+      <a href="indicacoes.html?categoria=editor">
+        <img src="img/video_editor.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center; color: white;">Edição de Fotos/Videos</h5>
+      </a>
+    </div>
+    </div>
+    </div>
+    </section>
     </div>
     </div>
     <br>
-        <section id="destaques" class="bg-light-dark" style="height: 300px;">
-            <label class="mt-2">Aqui vem os "Em Destaque"</label>
-        </section>
-        <section class="bg-white" style="height: 300px;">
-            <label id="melhores-precos" class="mt-2">Aqui vem os "Melhores Preços"</label>
-        </section>
-    </main>
-    <script src="js/load-navbar.js"></script>
-    <script src="js/load-footer.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <section id="destaques" class="bg-light-dark" style="height: 300px;">
+      <label class="mt-2">Aqui vem os "Em Destaque"</label>
+    </section>
+    <section class="bg-white" style="height: 300px;">
+      <label id="melhores-precos" class="mt-2">Aqui vem os "Melhores Preços"</label>
+    </section>
+  </main>
+  <script src="js/load-navbar.js"></script>
+  <script src="js/load-footer.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
+
 </html>
