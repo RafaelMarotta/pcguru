@@ -1,3 +1,14 @@
+<style>
+    .btn-pink-moon {
+        background: #ec008c; 
+        background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
+        background: linear-gradient(to right, #fc6767, #ec008c); 
+        color: #fff;
+        border-radius: 4px solid #eee;
+        
+    }
+    </style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="img/logo_pcguru.png" height="45px" alt=""></a>
@@ -30,10 +41,40 @@
                     <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em grey" href="#">Quem Somos</a>
                 </li>
                 <li>
-                    <button class="btn btn-dark text-white mt-2 mt-lg-0">
+                    <button type="button" class="btn btn-pink-moon text-white" data-bs-toggle="modal" data-bs-target="#modalForm">
                         Entrar/Cadastrar
-                    </button>
+                      </button>
                 </li>
+                <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog border">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Informe seu email e senha:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email:</label>
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Email" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Senha:</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Senha" />
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                        <label class="form-check-label" for="rememberMe">Lembrar</label>
+                                    </div>
+                                    <div class="modal-footer d-block">
+                                        <p class="float-start">Não tenho uma conta: <a href="/cadastro.html">Cadastrar-se</a></p>
+                                        <button type="submit" class="btn btn-pink-moon text-white float-end">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
     </div>
