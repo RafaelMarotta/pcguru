@@ -7,12 +7,10 @@ function confirmacao(id) {
             var result = array.filter(function (user) {
                 return user.id == id;
             });
-
             for (var id of user) {
                 var removeUser = array.indexOf(id);
                 array.splice(id, 1);
             }
         }
     }
-
 }
