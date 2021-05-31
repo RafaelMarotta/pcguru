@@ -4,7 +4,8 @@ function logar(){
     
     if(email.value == "admin@admin.com" && senha.value == "admin"){
         localStorage.setItem("acesso", true);
-        window.location.href = "indicacoes.html?categoria=home-office";
+        alert('Usuário Logado no Sistema!');
+        window.location.href = "index.html";
     }else{
         alert('Usuário ou senha inválidos!');
     }
