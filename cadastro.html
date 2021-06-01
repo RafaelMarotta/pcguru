@@ -14,11 +14,8 @@
 <style>
   .btn-pink-moon {
     background: #ec008c;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ec008c, #2f00ff);
+    background: linear-gradient(to right, #ec008c, #2f00ff);
     color: #fff;
     border-radius: 4px solid #eee;
 
@@ -66,22 +63,26 @@
                           data-bs-target="#testModal"><u>Termos de serviço.</u></a>
                       </label>
 
-                      <div class="modal" tabindex="-1" id="testModal">
+                      <div class="modal fade" tabindex="-1" id="testModal">
                         <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Termos de serviço</h5>
-                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint excepturi accusamus fugiat voluptate repellendus deleniti libero. Non qui excepturi consectetur molestias tempora nostrum a corporis architecto minus eligendi reprehenderit dignissimos quod, ipsum sequi explicabo tenetur libero accusantium labore sint delectus.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" id="modalClose" class="btn btn-pink-moon" data-dismiss="modal">Close</button>
-                                </div>
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Termos de serviço</h5>
+                              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <div class="modal-body">
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint excepturi accusamus
+                                fugiat voluptate repellendus deleniti libero. Non qui excepturi consectetur molestias
+                                tempora nostrum a corporis architecto minus eligendi reprehenderit dignissimos quod,
+                                ipsum sequi explicabo tenetur libero accusantium labore sint delectus.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" id="modalClose" class="btn btn-pink-moon"
+                                data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
 
                     </div>
                     <div class="d-flex justify-content-center">

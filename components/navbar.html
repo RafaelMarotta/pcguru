@@ -1,21 +1,39 @@
 <style>
     .btn-pink-moon {
-        background: #ec008c; 
-        background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
-        background: linear-gradient(to right, #fc6767, #ec008c); 
+        background: #ec008c;
+        background: -webkit-linear-gradient(to right, #ec008c, #2f00ff);
+        background: linear-gradient(to right, #ec008c, #2f00ff);
         color: #fff;
         border-radius: 4px solid #eee;
-        
-    }
-    .modal-content  {
-    -webkit-border-radius: 50px !important;
-    -moz-border-radius: 50px !important;
-    border-radius: 30px !important; 
-    padding: 8px;
-}
-    </style>
 
-    <script src="/js/login-form.js"></script>
+    }
+
+    .modal-content {
+        -webkit-border-radius: 50px !important;
+        -moz-border-radius: 50px !important;
+        border-radius: 30px !important;
+        padding: 8px;
+    }
+
+    .img-banner {
+        width: 100%;
+        background-image: url("img/banner_pcguru2.png");
+        min-height: 365px;
+        background-size: 100% 100%;
+    }
+
+    @media (max-width: 600px) {
+        .img-banner {
+            background-image: url("img/banner_menor.png");
+        }
+    }
+</style>
+
+<script src="/js/login-form.js"></script>
+<section class="bg-dark">
+    <div class="img-banner">
+    </div>
+</section>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light-dark">
     <div class="container-fluid">
@@ -27,7 +45,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav flex-column flex-lg-row flex-wrap bd-navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="index.html#destaques">Em
+                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)"
+                        href="index.html#destaques">Em
                         Destaque</a>
                 </li>
                 <li class="nav-item">
@@ -37,46 +56,56 @@
             </ul>
             <ul class="navbar-nav flex-column flex-lg-row flex-wrap ms-md-auto">
                 <li class="nav-item">
-                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="listagem.html">Favoritos</a>
+                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)"
+                        href="listagem.html">Favoritos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="#">Minha Conta</a>
+                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="#">Minha
+                        Conta</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="#">Contato</a>
                 </li>
                 <li class="nav-item no-border">
-                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="#">Quem Somos</a>
+                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)"
+                        href="/quem-somos.html">Quem Somos</a>
                 </li>
                 <li style="padding-left: 10px;">
-                    <button type="button" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" class="btn btn-pink-moon text-white" data-bs-toggle="modal" data-bs-target="#modalForm">
+                    <button type="button" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)"
+                        class="btn btn-pink-moon text-white" data-bs-toggle="modal" data-bs-target="#modalForm">
                         Entrar/Cadastrar
-                      </button>
+                    </button>
                 </li>
-                <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Informe seu email e senha:</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label">Email:</label>
-                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+                                        <input type="text" class="form-control" id="email" name="email"
+                                            placeholder="Email" />
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Senha:</label>
-                                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
+                                        <input type="password" class="form-control" id="senha" name="senha"
+                                            placeholder="Senha" />
                                     </div>
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="rememberMe" />
                                         <label class="form-check-label" for="rememberMe">Lembrar</label>
                                     </div>
                                     <div class="modal-footer d-block">
-                                        <p class="float-start">Não tenho uma conta: <a href="/cadastro.html">Cadastrar-se</a></p>
-                                        <button onclick="logar()" type="submit" class="btn btn-pink-moon text-white float-end">Entrar</button>
+                                        <p class="float-start">Não tenho uma conta: <a
+                                                href="/cadastro.html">Cadastrar-se</a></p>
+                                        <button onclick="logar()" type="submit"
+                                            class="btn btn-pink-moon text-white float-end">Entrar</button>
                                     </div>
                                 </form>
                             </div>

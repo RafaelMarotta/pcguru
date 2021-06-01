@@ -2,93 +2,177 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/indicacoes.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PC GURU</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/indicacoes.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PC GURU</title>
 </head>
 <style>
-.btn-pink-moon {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .btn-pink-moon {
+    background: #ec008c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc6767, #ec008c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border-radius: 4px solid #eee;
-    
-}
+
+  }
+
+
+  .social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
 </style>
 
 <body>
-    <main>
-        <section class="vh-100 bg-image" style="background-image: url('img/fundo_cad.jpg');">
-            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
-              <div class="container h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                  <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                    <div class="card" style="border-radius: 15px;">
-                      <div class="card-body p-5">
-                        <h2 class="text-uppercase text-center mb-5">Criar uma conta</h2>
-          
-                        <form>
-          
-                          <div class="form-outline mb-4">
-                            <label class="form-label" for="form3Example1cg">Seu nome:</label>
-                            <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <label class="form-label" for="form3Example3cg">Email:</label>
-                            <input type="email" id="form3Example3cg" class="form-control form-control-lg" />   
-                          </div>
-                          
-          
-                          <div class="form-outline mb-4">
-                            <label class="form-label" for="form3Example4cg">Senha:</label>
-                            <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                          </div>
-          
-                          <div class="form-outline mb-4">
-                            <label class="form-label" for="form3Example4cdg">Confirmar senha:</label>
-                            <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                          </div>
-          
-                          <div class="form-check d-flex justify-content-center mb-5">
-                            <input
-                              class="form-check-input me-2"
-                              type="checkbox"
-                              value=""
-                              id="form2Example3cg"
-                            />
-                            <label class="form-check-label" for="form2Example3g">
-                              Eu aceito todos os <a href="#!" class="text-body"><u>Termos de serviço.</u></a>
-                            </label>
-                          </div>
-          
-                          <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-pink-moon btn-block btn-lg text-white">Cadastrar</button>
-                          </div>
-          
-                          <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a href="#!" class="fw-bold text-body"><u>Faça login aqui</u></a></p>
-          
-                        </form>
-          
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <main>
+    <div style="background-image: url('img/fundo_cad.jpg');">
+      <!-- For demo purpose -->
+      <div class="container py-5">
+        <div class="row text-center text-white">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Conheça a Equipe PCGURU</h1>
+            <p class="lead mb-0">Usamos um template de bootstrap 5.</p>
+          </div>
+        </div>
+      </div><!-- End -->
+
+
+      <div class="container">
+        <div class="row text-center">
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="/img/foto_teste.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
             </div>
-          </section>
-    </main>
-    
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="js/load-navbar.js"></script>
-    <script src="js/load-footer.js"></script>
+          </div><!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div><!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div><!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div><!-- End -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="js/load-navbar.js"></script>
+  <script src="js/load-footer.js"></script>
 </body>
 
 </html>
