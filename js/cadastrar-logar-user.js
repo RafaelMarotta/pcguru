@@ -1,8 +1,8 @@
 function cadastraUser() {
-    var nome = document.getElementById("nome");
-    var email = document.getElementById("email");
-    var senha = document.getElementById("senha");
-    var confirmarSenha = document.getElementById("confirmarSenha");
+    var nome = document.getElementById("nomeForm");
+    var email = document.getElementById("emailForm");
+    var senha = document.getElementById("senhaForm");
+    var confirmarSenha = document.getElementById("confirmarSenhaForm");
   
     var dados = JSON.parse(localStorage.getItem("dadosUser"));
   
@@ -17,6 +17,7 @@ function cadastraUser() {
       senha: senha.value,
       confirmarSenha: confirmarSenha.value,
     };
+    console.log(auxRegistro)
   
     dados.push(auxRegistro);
     localStorage.setItem("dadosUser", JSON.stringify(dados));

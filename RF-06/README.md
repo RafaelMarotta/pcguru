@@ -1,2 +1,0 @@
-# pcguru
-API GURU WEB
