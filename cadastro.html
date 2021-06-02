@@ -89,11 +89,42 @@
                       <button type="button" class="btn btn-pink-moon btn-block btn-lg text-white">Cadastrar</button>
                     </div>
 
-                    <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a href=""
-                        class="fw-bold text-body"><u>Faça login aqui</u></a></p>
+                    <p class="text-center text-muted mt-5 mb-0">Já tem uma conta? <a data-bs-toggle="modal"
+                        data-bs-target="#modalFormLogin" class="fw-bold text-body"><u>Faça login aqui</u></a></p>
 
                   </form>
-
+                  <div class="modal fade" id="modalFormLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Informe seu email e senha:</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label class="form-label">Email:</label>
+                              <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Senha:</label>
+                              <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" />
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="rememberMe" />
+                              <label class="form-check-label" for="rememberMe">Lembrar</label>
+                            </div>
+                            <div class="modal-footer d-block">
+                              <p class="float-start">Não tenho uma conta: <a href="/cadastro.html">Cadastrar-se</a></p>
+                              <button onclick="logar()" type="submit"
+                                class="btn btn-pink-moon text-white float-end">Entrar</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -105,6 +136,7 @@
 
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="js/login-form.js"></script>
   <script src="js/load-navbar.js"></script>
   <script src="js/load-footer.js"></script>
 </body>
