@@ -1,0 +1,58 @@
+.nav-link {
+    color: #000!important;
+    transition: color 0.75s;
+}
+
+.bg-light-dark {
+    background-color: #dfdfdf;
+}
+
+.nav-link:hover {
+    color: #666!important;
+}
+
+.btn {
+    opacity: 1;
+    transition: opacity 1s!important;
+}
+
+.btn:hover {
+    opacity: 0.65;
+}
+
+@media (max-width: 991.98px) { 
+    .nav-link {
+        border-bottom: 1px solid rgba(0,0,0,.3)!important;
+    }
+    .footer-link {
+        display: none;
+    }
+}
+
+.footer-link {
+    font-size: 0.85rem!important;
+    font-weight: bold;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size:1.2rem!important;
+}
+
+.footer-terms {
+    font-size: 0.85!important;
+}
+
+.no-border {
+    border: none!important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none!important;
+    color: black!important;
+}
+
