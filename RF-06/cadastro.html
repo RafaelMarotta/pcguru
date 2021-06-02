@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/cadastrar-logar-user.js" ></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/indicacoes.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PC GURU</title>
+  </head>
+  <style>
+    .btn-pink-moon {
+      background: #ec008c;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #fc6767, #4b4548);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #fc6767, #ec008c);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #fff;
+      border-radius: 4px solid #eee;
+    }
+  </style>
+
+  <body>
+    <main>
+      <section
+        class="vh-100 bg-image"
+        style="background-image: url('img/fundo_cad.jpg')"
+      >
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100">
+            <div
+              class="row d-flex justify-content-center align-items-center h-100"
+            >
+              <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card" style="border-radius: 15px">
+                  <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">
+                      Criar uma conta
+                    </h2>
+
+                    <form>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example1cg"
+                          >Seu nome:</label
+                        >
+                        <input
+                          type="text"
+                          id="nome"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3cg"
+                          >Email:</label
+                        >
+                        <input
+                          type="email"
+                          value=""
+                          id="email"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4cg"
+                          >Senha:</label
+                        >
+                        <input
+                          type="password"
+                          value=""
+                          id="senha"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example4cdg"
+                          >Confirmar senha:</label
+                        >
+                        <input
+                          type="password"
+                          value=""
+                          id="confirmarSenha"
+                          class="form-control form-control-lg"
+                        />
+                      </div>
+
+                      <div
+                        class="form-check d-flex justify-content-center mb-5"
+                      >
+                        <input
+                          class="form-check-input me-2"
+                          type="checkbox"
+                          value=""
+                          id="form2Example3cg"
+                        />
+                        <label class="form-check-label" for="form2Example3g">
+                          Eu aceito todos os
+                          <a
+                            type="button"
+                            class="text-body"
+                            data-bs-toggle="modal"
+                            data-bs-target="#testModal"
+                            ><u>Termos de serviço.</u></a
+                          >
+                        </label>
+
+                        <div class="modal" tabindex="-1" id="testModal">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Termos de serviço</h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur,
+                                  adipisicing elit. Sint excepturi accusamus
+                                  fugiat voluptate repellendus deleniti libero.
+                                  Non qui excepturi consectetur molestias
+                                  tempora nostrum a corporis architecto minus
+                                  eligendi reprehenderit dignissimos quod, ipsum
+                                  sequi explicabo tenetur libero accusantium
+                                  labore sint delectus.
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  id="modalClose"
+                                  class="btn btn-pink-moon"
+                                  data-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                      </form>
+                        <button
+                        onclick="cadastraUser()"
+                          type="button"
+                          class="btn btn-pink-moon btn-block btn-lg text-white"
+                        >
+                          Cadastrar
+                        </button>
+                      </div>
+
+                      <p class="text-center text-muted mt-5 mb-0">
+                        Já tem uma conta?
+                        <a href="#!" class="fw-bold text-body"
+                          ><u>Faça login aqui</u></a
+                        >
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/load-navbar.js"></script>
+    <script src="js/load-footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.card-indicacao{
+    border: 2px solid black !important;
+}
+
+.btn-like {
+    cursor:pointer;
+    color:#9E9C9C;
+}
+
+.btn-like:hover {
+    color: #000;
+}
+
+.btn-unlike {
+    cursor:pointer;
+    color: #000;
+}
+
+.btn-unlike:hover {
+    cursor:pointer;
+    color:#9E9C9C;
+}
