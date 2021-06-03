@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/indicacoes.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PC GURU</title>
+</head>
+
+<body>
+    <main>
+        <section id="minha-conta" class="bg-white container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form class="m-3 p-3" style="min-height:350px;">
+                        <h1 class="mb-3">Minha conta</h1>
+                        <div>
+                            <div class="mb-3">
+                                <label for="" class="fw-bold">Nome:</label>
+                                <input id="nome" type="text" class="form-control" disabled=true>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="fw-bold">Email:</label>
+                                <input id="email" type="text" class="form-control" disabled=true>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-danger form-control" onclick="deletaConta()" type="button">Deletar conta</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/load-navbar.js"></script>
+    <script src="js/load-footer.js"></script>
+    <script src="js/tela-minha-conta.js"></script>
+</body>
+
+</html>

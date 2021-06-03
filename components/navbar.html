@@ -59,7 +59,11 @@
                         href="listagem.html">Favoritos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)" href="#">Minha
+                    <a class="nav-link" id="minhaContaHabilitado" style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)"
+                        href="minha-conta.html">Minha
+                        Conta</a>
+                    <a class="nav-link" id="minhaContaDesabilitado" data-bs-toggle="modal" data-bs-target="#modalFormLogin"
+                        style="text-shadow: 0.1em 0.1em 0.2em rgb(167, 166, 166)">Minha
                         Conta</a>
                 </li>
                 <li class="nav-item">
@@ -88,22 +92,25 @@
                                 <form>
                                     <div class="mb-3">
                                         <label class="form-label">Email:</label>
-                                        <input type="text" class="form-control" id="email" name="email"
+                                        <input type="text" class="form-control" required="true" id="email" name="email"
                                             placeholder="Email" />
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Senha:</label>
-                                        <input type="password" class="form-control" id="senha" name="senha"
-                                            placeholder="Senha" />
+                                        <input type="password" class="form-control" required="true" id="senha"
+                                            name="senha" placeholder="Senha" />
+                                    </div>
+                                    <div class="error-message d-none">
+                                        <p class="text-danger">Usuário ou senha inválidos!</p>
                                     </div>
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                        <input type="checkbox" class="form-check-input" required=true id="rememberMe" />
                                         <label class="form-check-label" for="rememberMe">Lembrar</label>
                                     </div>
                                     <div class="modal-footer d-block">
                                         <p class="float-start">Não tenho uma conta: <a
                                                 href="/cadastro.html">Cadastrar-se</a></p>
-                                        <button onclick="logar()" type="submit"
+                                        <button id="btnEntrar" type="button"
                                             class="btn btn-pink-moon text-white float-end">Entrar</button>
                                     </div>
                                 </form>

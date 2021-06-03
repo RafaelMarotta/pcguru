@@ -1,12 +1,23 @@
-function logar(){
-    var email = document.getElementById("email");
-    var senha = document.getElementById("senha");
-    
-    if(email.value == "admin@admin.com" && senha.value == "admin"){
-        localStorage.setItem("acesso", true);
-        alert('Usuário Logado no Sistema!');
+$("#btnEntrar").click(function (event) {
+    event.preventDefault()
+    if (this.form.reportValidity()) {
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
+        doLogin(email, senha)
+    }
+})
+
+function doLogin(email, senha) {
+    var dados = JSON.parse(localStorage.getItem("dadosUser"));
+
+    var usuarioLogado = dados.filter(function (user) {
+        return user.email == email && user.senha == senha
+    });
+
+    if (usuarioLogado.length > 0) {
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado[0]));
         window.location.href = "index.html";
-    }else{
-        alert('Usuário ou senha inválidos!');
+    } else {
+        $(".error-message").removeClass("d-none")
     }
 }

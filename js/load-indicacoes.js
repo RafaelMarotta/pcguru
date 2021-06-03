@@ -25,7 +25,7 @@ async function appendIndicacao(cardIndicacao, json) {
 
     containerIndicacao = containerIndicacao.replace("${imagemComputador}", json.imagemComputador)
     containerIndicacao = containerIndicacao.replace("${lojaImagem}", json.lojaImagem)
-    containerIndicacao = containerIndicacao.replace("${linkLoja}", json.linkLoja)
+    containerIndicacao = containerIndicacao.replaceAll("${linkLoja}", json.linkLoja)
 
     containerIndicacao = containerIndicacao.replace("${preco}", json.preco)
     containerIndicacao = containerIndicacao.replace("${noCartao}", json.noCartao)

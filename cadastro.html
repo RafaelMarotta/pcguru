@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./js/cadastrar-logar-user.js"></script>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/indicacoes.css" />
   <link rel="stylesheet" href="css/index.css" />
@@ -41,30 +40,33 @@
                   <form>
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form3Example1cg">Seu nome:</label>
-                      <input type="text" id="nomeForm" class="form-control form-control-lg" />
+                      <input type="text" required="true" id="nomeForm" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form3Example3cg">Email:</label>
-                      <input type="email" id="emailForm" class="form-control form-control-lg" />
+                      <input type="email" required="true" id="emailForm" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form3Example4cg">Senha:</label>
-                      <input type="password" value="" id="senhaForm" class="form-control form-control-lg" />
+                      <input type="password" value="" required="true" id="senhaForm"
+                        class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form3Example4cdg">Confirmar senha:</label>
-                      <input type="password" value="" id="confirmarSenhaForm" class="form-control form-control-lg" />
+                      <input type="password" value="" required="true" id="confirmarSenhaForm"
+                        class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-check d-flex justify-content-center mb-5">
-                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                      <input class="form-check-input me-2" required="true" type="checkbox" value=""
+                        id="form2Example3cg" />
                       <label class="form-check-label" for="form2Example3g">
                         Eu aceito todos os
-                        <a type="button" class="text-body" data-bs-toggle="modal" data-bs-target="#testModal"><u>Termos
-                            de serviço.</u></a>
+                        <a type="button" class="text-body" data-bs-toggle="modal" data-bs-target="#testModal"><u>
+                          Termos de serviço.</u></a>
                       </label>
 
                       <div class="modal" tabindex="-1" id="testModal">
@@ -97,14 +99,14 @@
                     </div>
                     <div class="d-flex justify-content-center">
                   </form>
-                  <button onclick="cadastraUser()" type="button" class="btn btn-pink-moon btn-block btn-lg text-white">
+                  <button id="registraUsuario" type="button" class="btn btn-pink-moon btn-block btn-lg text-white">
                     Cadastrar
                   </button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">
                   Já tem uma conta?
-                  <a href="#!" class="fw-bold text-body"><u>Faça login aqui</u></a>
+                  <a href="#!" class="fw-bold text-body" data-bs-toggle="modal" data-bs-target="#modalFormLogin"><u>Faça login aqui</u></a>
                 </p>
               </div>
             </div>
@@ -117,6 +119,7 @@
 
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="./js/cadastrar-logar-user.js"></script>
   <script src="js/load-navbar.js"></script>
   <script src="js/load-footer.js"></script>
 </body>
