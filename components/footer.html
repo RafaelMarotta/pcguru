@@ -1,16 +1,53 @@
 <footer class="bg-light-dark pt-4 pb-3">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">  
+      <div>
+        <a href="https://www.facebook.com/puc.barreiro.79" class="me-3 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/napucminas/?hl=pt-br" class="me-3 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/MatheusHoliveira/pcguru" class="me-3 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+ 
     <ul class="d-flex flex-row flex-wrap text-center justify-content-between container align-items-end">
         <li><a href="index.html#destaques" class="footer-link">Em Destaque</a></li>
         <li><a href="index.html#melhores-precos" class="footer-link">Melhores Preços</a></li>
         <li><a href="listagem.html" class="footer-link ">Favoritos</a></li>
         <h2 class="footer-title">PC GURU</h2>
-        <li><a href="minha-conta.html" class="footer-link">Minha Conta</a></li>
-        <li><a href="#" class="footer-link">Contato</a></li>
-        <li><a href="quem-somos.html" class="footer-link">Quem Somos</a></li>
+        <li><a href="#" class="footer-link">Minha Conta</a></li>
+        <li><a href="#contato" class="footer-link">Contato</a></li>
+        <li><a href="#" class="footer-link">Quem Somos</a></li>
     </ul>
+    <section class="" id="contato">
+        <div class="container text-center text-md-start mt-3">
+          <div class="row mt-3">
+              <h5><b>Como podemos te ajudar?<br> Preencha os espaços abaixo!</b></h5>
+              <form>
+                  <div class="form-group text-left">
+                      <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp" placeholder="Nome" style="border-radius: 0;width:100%;">
+                  </div>
+                  <div class="form-group text-left">
+                      <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email" style="border-radius: 0;width:100%;">
+                  </div>
+                  <div class="form-group text-left">
+                      <input type="text" class="form-control" id="assunto" name="assunto" aria-describedby="assuntoHelp" placeholder="Assunto" style="border-radius: 0;width:100%;">
+                  </div>
+                  <div class="form-group text-left">
+                      <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+                      <small id="mensagemHelp" class="form-text text-muted mensagemHelp">Máximo 500 caracteres.</small>
+                  </div>
+                  <button type="submit" class="btn btn-danger btn-block" style="border-radius: 0;">Enviar</button>
+              </form>
+          </div>
+        </div>
+      </section>
     <div class="text-center container">
         <hr>
         <span class="footer-terms">© 2021-2021</span>
         <span class="footer-terms">Privacy — Terms</span>
     </div>
-</footer>
+</footer>     
