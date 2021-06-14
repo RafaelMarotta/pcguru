@@ -1,0 +1,28 @@
+{
+    "destaques": [
+        {
+            "titulo": "PC GAMER T GAMER FRAMEMASTER AMD",
+            "imagem": "RDGmegatron.jpg",
+            "descricao": "PC GAMER T-GAMER, FRAMEMASTER, AMD RYZEN 5 5600X / GeForce RTX 2060 6GB / DDR4 8GB / HD 1TB",
+            "url": "https://www.terabyteshop.com.br/produto/15907/pc-gamer-t-gamer-framemaster-amd-ryzen-5-5600x-geforce-rtx-2060-6gb-ddr4-8gb-hd-1tb"
+        },
+        {
+            "titulo": " T-GAMER Odin",
+            "imagem": "RDGgrape.jpg",
+            "descricao": "PC Gamer T-GAMER Odin Intel i7 10700KF / NVIDIA GeForce RTX 2060 / DDR4 8GB / HD 1TB",
+            "url": "https://www.terabyteshop.com.br/produto/17308/t-gamer-odin-lvl-1"
+        },
+        {
+            "titulo": "MANCER ATENA II",
+            "imagem": "PCcompleto.jpg",
+            "descricao": "PCOMPUTADOR MANCER ATENA II, AMD RYZEN 5 3500X, A320M, GEFORCE GTX 1650 4GB, 8GB DDR4, SSD 256GB, MANCER 500W, DRAGOON, CABO DE FORÇA E CABO HDMI",
+            "url": "https://www.pichau.com.br/computadores/pichau-gamer/computador-mancer-atena-ii-amd-ryzen-5-3500x-a320m-geforce-gtx-1650-4gb-8gb-ddr4-ssd-256gb-mancer-500w-dragoon-cabo-de-forca-e-cabo-hdmi"
+        },
+        {
+            "titulo": "PICHAU GAMER",
+            "imagem": "kronenRGB.jpg",
+            "descricao": "COMPUTADOR PICHAU GAMER, RYZEN 5 2400G, 16GB DDR4, SSD 256GB, 400W, DRAGOON",
+            "url": "https://www.pichau.com.br/computadores/pichau-gamer/computador-pichau-gamer-ryzen-5-2400g-16gb-ddr4-ssd-256gb-400w-dragoon"
+        }
+    ]
+}
