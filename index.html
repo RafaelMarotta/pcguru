@@ -14,18 +14,17 @@
       border: none;
       margin: 0px;
       background: none;
-      
+
     }
 
     .card-img-top {
       border: 2px solid white;
     }
-    
+
 
     .card-body {
       border: none;
     }
-
   </style>
 </head>
 
@@ -91,15 +90,34 @@
     </div>
     </div>
     <br>
-    <section id="destaques" class="bg-light-dark" style="height: 300px;">
-      <label class="mt-2">Aqui vem os "Em Destaque"</label>
+    <section class="bg-white">
+      <div class="container-fluid p-4">
+        <h2>Em Destaques</h2>
+        <div class="row" id="destaques">
+        </div>
+      </div>
     </section>
-    <section class="bg-white" style="height: 300px;">
-      <label id="melhores-precos" class="mt-2">Aqui vem os "Melhores Preços"</label>
+    <section class="bg-white">
+      <div class="container-fluid p-4">
+        <h2>Melhores Preços</h2>
+        <div class="row" id="melhoresPrecos">
+        </div>
+      </div>
     </section>
   </main>
   <script src="js/load-navbar.js"></script>
   <script src="js/load-footer.js"></script>
+  <script src="js/load-destaques.js"></script>
+  <script>
+    fetch('./JSON/destaques.json')
+      .then(response => response.json())
+      .then(response => appendDestaques("destaques", response.destaques))
+  </script>
+  <script>
+    fetch('./JSON/melhores_precos.json')
+      .then(response => response.json())
+      .then(response => appendDestaques("melhoresPrecos", response.destaques))
+  </script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>

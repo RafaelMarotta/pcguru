@@ -1,0 +1,28 @@
+{
+    "destaques": [
+        {
+            "titulo": "Vostro 15 3500",
+            "imagem": "DELLvostro.jpg",
+            "descricao": "Notebook de 15,6 polegadas com borda fina em dois lados, bateria ExpressCharge™ e processadores Intel® Core™ de até 11ª geração.",
+            "url": "https://www.dell.com/pt-br/work/shop/notebooks-dell/novo-vostro-15-3000/spd/vostro-15-3500-laptop/v3500w6002w"
+        },
+        {
+            "titulo": "Computador Completo Intel 7ª Geração 8GB HD 500GB",
+            "imagem": "PCcompleto04.jpg",
+            "descricao": "Computadores Skill da série ProOs Desktops dessa linha foram desenvolvidos para pessoas exigentes que precisam de computadores rápidos, potentes e com preço justo.",
+            "url": "https://www.americanas.com.br/produto/2587334754?opn=YSMESP&cor=Preto"
+        },
+        {
+            "titulo": "Computador Completo Intel Dual Core 4gb Hd 500gb Monitor Hdmi 19.5",
+            "imagem": "PCcompleto.jpg",
+            "descricao": "Este Computador Skill é feito sob medida para que você extraia o máximo da sua produtividade no trabalho ou arrase nos estudos",
+            "url": "https://www.submarino.com.br/produto/42466179/computador-completo-intel-dual-core-4gb-hd-500gb-monitor-hdmi-19-5-skill?cor=Preto&opn=XMLGOOGLE&sellerid=71052559000375&voltagem=Bivolt"
+        },
+        {
+            "titulo": "Notebook Lenovo Ideapad S145 R5 12GB 1TB W10 15.6",
+            "imagem": "note_lenovo.jpg",
+            "descricao": "Com o Notebook Lenovo Ideapad S145 AMD Ryzen 5 12GB 1TB W10 15,6 Prata você vai redefinir sua experiência de usuário em um notebook com design e performance superior.",
+            "url": "https://www.americanas.com.br/produto/1608469552?sellerid=33014556000196&opn=YSMESP&voltagem=BIVOLT"
+        }
+    ]
+}
