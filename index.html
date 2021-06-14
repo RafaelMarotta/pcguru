@@ -100,7 +100,7 @@
     <section class="bg-white">
       <div class="container-fluid p-4">
         <h2>Melhores Preços</h2>
-        <div class="row" id="melhoresPrecos">
+        <div class="row" id="melhores-precos">
         </div>
       </div>
     </section>
@@ -116,7 +116,7 @@
   <script>
     fetch('./JSON/melhores_precos.json')
       .then(response => response.json())
-      .then(response => appendDestaques("melhoresPrecos", response.destaques))
+      .then(response => appendDestaques("melhores-precos", response.destaques))
   </script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
